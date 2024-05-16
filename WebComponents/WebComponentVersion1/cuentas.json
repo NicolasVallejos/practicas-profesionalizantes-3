@@ -1,0 +1,154 @@
+{
+  "cuentas": [
+    {
+      "id": 1,
+      "username": "IronMan92",
+      "saldo": "$100.50"
+    },
+    {
+      "id": 2,
+      "username": "LunaGamer77",
+      "saldo": "$75.25"
+    },
+    {
+      "id": 3,
+      "username": "ShadowNinja123",
+      "saldo": "$200.00"
+    },
+    {
+      "id": 4,
+      "username": "DragonMasterX",
+      "saldo": "$50.75"
+    },
+    {
+      "id": 5,
+      "username": "SpaceExplorer99",
+      "saldo": "$300.30"
+    },
+    {
+      "id": 6,
+      "username": "PixelWizard",
+      "saldo": "$150.00"
+    },
+    {
+      "id": 7,
+      "username": "MysterySeeker",
+      "saldo": "$80.60"
+    },
+    {
+      "id": 8,
+      "username": "EternalDreamer",
+      "saldo": "$400.20"
+    },
+    {
+      "id": 9,
+      "username": "SunnySideUp",
+      "saldo": "$10.00"
+    },
+    {
+      "id": 10,
+      "username": "NeonPhantom",
+      "saldo": "$50.00"
+    },
+    {
+      "id": 11,
+      "username": "CyberPunk99",
+      "saldo": "$125.75"
+    },
+    {
+      "id": 12,
+      "username": "GalacticTraveler",
+      "saldo": "$275.50"
+    },
+    {
+      "id": 13,
+      "username": "TechWizard",
+      "saldo": "$90.25"
+    },
+    {
+      "id": 14,
+      "username": "MysticMage",
+      "saldo": "$180.00"
+    },
+    {
+      "id": 15,
+      "username": "SamuraiWarrior",
+      "saldo": "$200.60"
+    },
+    {
+      "id": 16,
+      "username": "StealthyAssassin",
+      "saldo": "$450.20"
+    },
+    {
+      "id": 17,
+      "username": "CosmicExplorer",
+      "saldo": "$15.00"
+    },
+    {
+      "id": 18,
+      "username": "DreamCatcher",
+      "saldo": "$75.00"
+    },
+    {
+      "id": 19,
+      "username": "ArcaneSorcerer",
+      "saldo": "$300.00"
+    },
+    {
+      "id": 20,
+      "username": "StarStrider",
+      "saldo": "$500.00"
+    },
+    {
+      "id": 21,
+      "username": "NeoGamer",
+      "saldo": "$110.00"
+    },
+    {
+      "id": 22,
+      "username": "TechNinja",
+      "saldo": "$95.50"
+    },
+    {
+      "id": 23,
+      "username": "GalacticHero",
+      "saldo": "$700.75"
+    },
+    {
+      "id": 24,
+      "username": "DreamWalker",
+      "saldo": "$250.25"
+    },
+    {
+      "id": 25,
+      "username": "CyberMage",
+      "saldo": "$180.80"
+    },
+    {
+      "id": 26,
+      "username": "SpacePilot",
+      "saldo": "$600.00"
+    },
+    {
+      "id": 27,
+      "username": "TechSavvy",
+      "saldo": "$50.50"
+    },
+    {
+      "id": 28,
+      "username": "VirtualWarrior",
+      "saldo": "$175.00"
+    },
+    {
+      "id": 29,
+      "username": "DigitalNomad",
+      "saldo": "$125.20"
+    },
+    {
+      "id": 30,
+      "username": "PixelPioneer",
+      "saldo": "$300.40"
+    }
+  ]
+}
