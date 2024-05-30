@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<!--
+    HTML/CSS/JS Calculator to MVC WebComponent Migration Exercise
+    Example code for ISFT151 for Educational Purposes
+    Prácticas Profesionalizantes III
+
+    Copyright 2021-2024 mgsantiago <mgsantiago@protonmail.com>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+    MA 02110-1301, USA.
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MVC WebComponent Activity</title>
+    <style>
+        .numberButton {
+            background-color: blue;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        .operatorButton {
+            background-color: #00FF04;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        .clearButton {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .calculateButton {
+            background-color: #FFB900;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .displayResult {
+            border-radius: 6px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4"> 
+                <input class="displayResult" id="display" type="text" value="" disabled> 
+            </td>
+        </tr>
+        <tr>
+            <td><button class="numberButton" id="button7">7</button></td>
+            <td><button class="numberButton" id="button8">8</button></td>
+            <td><button class="numberButton" id="button9">9</button></td>
+            <td><button class="operatorButton" id="buttonPlus">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="numberButton" id="button4">4</button></td>
+            <td><button class="numberButton" id="button5">5</button></td>
+            <td><button class="numberButton" id="button6">6</button></td>
+            <td><button class="operatorButton" id="buttonMinus">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="numberButton" id="button3">3</button></td>
+            <td><button class="numberButton" id="button2">2</button></td>
+            <td><button class="numberButton" id="button1">1</button></td>
+            <td><button class="operatorButton" id="buttonProduct">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="numberButton" id="button0">0</button></td>
+            <td><button class="numberButton" id="buttonDecimalPoint">.</button></td>
+            <td><button class="calculateButton" id="buttonCalculate">=</button></td>
+            <td><button class="operatorButton" id="buttonDivision">/</button></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button class="clearButton" id="buttonClear">BORRAR</button>
+            </td>
+        </tr>
+     </table>
+
+     <script type="text/javascript">
+        let display = document.getElementById("display");
+
+        function appendToDisplay(value) {
+            display.value += value;
+        }
+
+        function calculate() {
+            try {
+                display.value = eval(display.value.replace('x', '*'));
+            } catch (e) {
+                display.value = "Error";
+            }
+        }
+
+        function clearDisplay() {
+            display.value = "";
+        }
+
+        document.getElementById("button0").onclick = () => appendToDisplay('0');
+        document.getElementById("button1").onclick = () => appendToDisplay('1');
+        document.getElementById("button2").onclick = () => appendToDisplay('2');
+        document.getElementById("button3").onclick = () => appendToDisplay('3');
+        document.getElementById("button4").onclick = () => appendToDisplay('4');
+        document.getElementById("button5").onclick = () => appendToDisplay('5');
+        document.getElementById("button6").onclick = () => appendToDisplay('6');
+        document.getElementById("button7").onclick = () => appendToDisplay('7');
+        document.getElementById("button8").onclick = () => appendToDisplay('8');
+        document.getElementById("button9").onclick = () => appendToDisplay('9');
+        document.getElementById("buttonPlus").onclick = () => appendToDisplay('+');
+        document.getElementById("buttonMinus").onclick = () => appendToDisplay('-');
+        document.getElementById("buttonProduct").onclick = () => appendToDisplay('x');
+        document.getElementById("buttonDivision").onclick = () => appendToDisplay('/');
+        document.getElementById("buttonDecimalPoint").onclick = () => appendToDisplay('.');
+        document.getElementById("buttonCalculate").onclick = calculate;
+        document.getElementById("buttonClear").onclick = clearDisplay;
+</script>
+
+</body>
+</html>
